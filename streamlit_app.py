@@ -53,4 +53,5 @@ url = "https://my.smoothiefroot.com/api/fruit/watermelon"
 response = requests.get(url)
 
 #smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon]")  
-st.text(response.json())
+#st.text(response.json())
+sf_df = st.dataframe(data=response.json(),use_container_width=True)
