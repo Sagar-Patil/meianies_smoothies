@@ -53,4 +53,4 @@ url = "https://my.smoothiefroot.com/api/fruit/watermelon"
 response = requests.get(url)
 
 #smoothiefroot_response = requests.get("[https://my.smoothiefroot.com/api/fruit/watermelon]")  
-st.text(response)
+st.text(response.json())
